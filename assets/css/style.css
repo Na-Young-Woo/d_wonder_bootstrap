@@ -483,19 +483,21 @@ h6 {
   /* background: url("../img/hero-bg.jpg") top left;
   background-size: cover;
   position: relative; */
-  background-color: #293120;
+  /* background-color: #293120; */
 }
 
-/* #hero:before {
+#hero:before {
   content: "";
-  background: rgba(255, 255, 255, 0.6);
-  background-color: #293120;
+  background: rgba(0, 0, 0, 0.4);
+  /* background: rgba(41, 49, 31, 0.2); */
+  /* background-image: ; */
+  /* background-color: #293120; */
   position: absolute;
   bottom: 0;
   top: 0;
   left: 0;
   right: 0;
-} */
+}
 
 #hero .container {
   position: relative;
@@ -509,7 +511,13 @@ h6 {
   /* color: #222222; */
   font-family: "Poppins", sans-serif;
 }
-
+#hero video {
+  position: absolute;
+  z-index: -10;
+  /* object-fit: cover; */
+  width: 100%;
+  /* height: 100vh; */
+}
 /* #hero h1 span {
   color: #293120;
 } */
