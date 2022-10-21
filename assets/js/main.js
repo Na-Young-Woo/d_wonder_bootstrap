@@ -10,7 +10,7 @@
   // alert(1);
   var test = document.getElementById("backVideo");
   // alert(test);
-  test.playbackRate = 1;
+  test.playbackRate = 0.9;
   /**
    * Easy selector helper function
    */
