@@ -8,6 +8,22 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+.carousel-item video {
+  width: 100vw;
+
+  /* content: ""; */
+
+  background: rgba(0, 0, 0, 0.3);
+  /* background: rgba(41, 49, 31, 0.2); */
+  /* background-image: ; */
+  /* background-color: #293120; */
+  /* position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0; */
+}
 body {
   /* font-family: "Open Sans", sans-serif; */
   font-family: "Nanum Gothic", sans-serif;
@@ -27,7 +43,7 @@ a {
   color: #256225;
 }
 .mainColorG {
-  background: linear-gradient(to right top, #3e4f29, #256225, #293120);
+  background: linear-gradient(to right top, #293120, #256225, #293120);
   color: transparent;
   -webkit-background-clip: text;
 }
@@ -43,7 +59,9 @@ a {
 
 .talkBack {
   background: linear-gradient(to bottom right, #fff 20%, #cbe5f7);
-  /* background: #3e4f29; */
+  /* background: #293120; */
+  position: relative;
+  /* top: -10px; */
 }
 /* .talkBack p {
   color: #ddd;
@@ -202,7 +220,7 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: #fff;
+  background: #293120;
   transition: all 0.5s;
   z-index: 997;
   height: 86px;
@@ -233,7 +251,7 @@ h6 {
 }
 
 #header .logo img {
-  max-height: 40px;
+  /* max-height: 40px; */
 }
 
 .scrolled-offset {
@@ -512,7 +530,7 @@ h6 {
 #hero:before {
   content: "";
 
-  background: rgba(0, 0, 0, 0.3);
+  /* background: rgba(0, 0, 0, 0.3); */
   /* background: rgba(41, 49, 31, 0.2); */
   /* background-image: ; */
   /* background-color: #293120; */
@@ -537,10 +555,10 @@ h6 {
 }
 #hero video {
   position: absolute;
-  top: -30px;
+  top: 60px;
   z-index: -10;
-  /* object-fit: cover; */
   width: 100%;
+  /* object-fit: cover; */
   /* height: 100vh; */
 }
 /* #hero h1 span {

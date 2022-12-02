@@ -8,9 +8,9 @@
 (function () {
   "use strict";
   // alert(1);
-  var test = document.getElementById("backVideo");
+  // var test = document.getElementById("backVideo");
   // alert(test);
-  test.playbackRate = 0.9;
+  // test.playbackRate = 0.9;
   /**
    * Easy selector helper function
    */

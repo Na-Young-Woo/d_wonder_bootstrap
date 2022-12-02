@@ -73,20 +73,21 @@
     </section> -->
 
     <!-- ======= Header ======= -->
-    <!-- <header id="header" class="d-flex align-items-center">
+    <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html">BizLand<span>.</span></a></h1>
+      <h1 class="logo"><a href="index.html">
+        <img src="./assets/img/D.WONDER_logo.png" alt="" style="width: 200px;"></a></h1>
       
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
+          <li><a class="nav-link scrollto active" style="color:#fff" href="#hero">회사 소개</a></li>
+          <li><a class="nav-link scrollto" style="color:#fff" href="#about">상품 안내</a></li>
+          <li><a class="nav-link scrollto" style="color:#fff" href="#services">프로젝트 진행</a></li>
+          <li><a class="nav-link scrollto " style="color:#fff" href="#portfolio">포트폴리오</a></li>
+          <li><a class="nav-link scrollto" style="color:#fff" href="#team">QnA</a></li>
+          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a> -->
+            <!-- <ul>
               <li><a href="#">Drop Down 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
@@ -100,20 +101,26 @@
               <li><a href="#">Drop Down 2</a></li>
               <li><a href="#">Drop Down 3</a></li>
               <li><a href="#">Drop Down 4</a></li>
-            </ul>
+            </ul> -->
           </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          
+          <li>
+            <button class="btn-get-started btn" style="background-color: #c39830;">
+            <a class="nav-link scrollto" href="#contact">마케팅 문의</a>
+          </button>
+          </li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
  
 
     </div>
-  </header> -->
+  </header>
     <!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
-    <section
+    <div style="width: 98vw; height:95vh; background-color: rgba(0, 0, 0, 0.2); position: absolute; z-index: 1;"></div>
+    <section style="position:absolute; z-index:10"
       id="hero"
       class="d-flex align-items-center"
       style="
@@ -127,27 +134,111 @@
         data-aos-delay="100"
         style="margin-top: 300px"
       >
+      <span style="color: #fff; font-size: 15px; margin-left: 170px;">생각을 뒤집다.</span>
         <h1><span style="color: #fff">D WONDER</span></h1>
-        <h2 style="color: #fff">생각을 뒤집다.</h2>
-        <div class="d-flex">
-          <a href="#about" class="btn-get-started scrollto">마케팅 문의</a>
-          <a
+        <!-- <img src="./assets/img/D.WONDER_logo_slogan.png" alt="" style="width: 200px;"> -->
+        <div class="d-flex" style="margin-top: 20px;">
+          <a href="#about" class="btn-get-started scrollto" style="">
+          <span style="color: #293120; font-weight: 700; font-size: 15px;">
+            <b>
+              <i class="bi bi-caret-right-fill subColor" style="color:#293120"></i>
+            </b>
+            
+            마케팅 문의</span>  
+          </a>
+          <!-- <a
             href="https://www.youtube.com/watch?v=jDDaplaOz7Q"
             class="glightbox btn-watch-video"
-            ><i class="bi bi-play-circle subColor"></i
-            ><span style="color: #fff"> Watch Video</span></a
-          >
+            ><span style="color: #fff"> 빠른 마케팅 문의</span><i class="bi bi-caret-right-fill subColor"></i
+              ></a
+          > -->
         </div>
       </div>
       <!-- 1, 4가 best -->
-      <video
+
+
+      <!-- <video
         id="backVideo"
         src="./assets/effect/자료/5.mov"
         muted
         autoplay
         loop
-      />
+      /> -->
+
+
     </section>
+
+
+
+
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <video
+            id="backVideo"
+            src="./assets/effect/자료/5.mov"
+            muted
+            autoplay
+            loop
+          />
+        </div>
+        <div class="carousel-item">
+          <video
+            id="backVideo"
+            src="./assets/effect/자료/1.mov"
+            muted
+            autoplay
+            loop
+          />
+        </div>
+        <div class="carousel-item">
+          <video
+            id="backVideo"
+            src="./assets/effect/자료/3.mov"
+            muted
+            autoplay
+            loop
+          />
+        </div>
+        <div class="carousel-item">
+          <video
+            id="backVideo"
+            src="./assets/effect/자료/4.mov"
+            muted
+            autoplay
+            loop
+          />
+        </div>
+        <div class="carousel-item">
+          <video
+            id="backVideo"
+            src="./assets/effect/자료/4.mp4"
+            muted
+            autoplay
+            loop
+          />
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    
+    
     <!-- End Hero -->
 
     <main id="main">
@@ -266,9 +357,11 @@
       <!-- ======= Skills Section ======= -->
       <section id="skills" class="skills">
         <div class="container" data-aos="fade-up">
-          <div class="row skills-content">
+          <div class="section-title" style="  text-align: left;">
+
+     
             <h3>
-              오롯이 내 가게의 성공적인 매출증대를 위한 맞춤 컨설팅을 통하여
+              오롯이 내 가게의 <span class="mainColor2">성공적인 매출증대</span>를 위한 맞춤 컨설팅을 통하여
               솔루션을 제공하는 만큼 타사 대비 고객님들의 만족도를 자부합니다.
             </h3>
 
@@ -354,13 +447,17 @@
             </section>
 
             <div class="text-center">
-              <h3>1. 문의   2.컨설팅 및 제안  3.계약  4.광고집행</h3>
+              <span style="font-size: 25px; margin-right: 100px;">1. 문의</span>
+              <span style="font-size: 25px; margin-right: 100px;">2.컨설팅 및 제안</span>
+              <span style="font-size: 25px; margin-right: 100px;">3.계약 
+                </span> 
+                <span style="font-size: 25px; margin-right: 60px;">4.광고집행</span>
             </div>
             <div class="row">
 
               <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
                 <div class="member">
-                  <div class="member-img">
+                  <div class="member-img" style=" width:120px">
                     <img src="assets/effect/자료/3dicons-png-dynamic-1.0.0/chat-bubble-dynamic-gradient.png" class="img-fluid" alt="">
                   </div>                 
                 </div>
@@ -368,8 +465,8 @@
     
               <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
                 <div class="member">
-                  <div class="member-img">
-                    <img src="assets/effect/자료/3dicons-png-dynamic-1.0.0/folder-dynamic-color.png" class="img-fluid" alt="">
+                  <div class="member-img" style=" width:120px">
+                    <img src="assets/effect/자료/3dicons-png-dynamic-1.0.0/chart-dynamic-color.png" class="img-fluid" alt="">
                   </div>                 
                 </div>
               </div>
@@ -377,17 +474,17 @@
               <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
                 <div class="member">
                   <div class="member">
-                    <div class="member-img">
-                      <img src="assets/effect/자료/3dicons-png-dynamic-1.0.0/thumb-up-dynamic-color.png" class="img-fluid" alt="">
+                    <div class="member-img" style=" width:120px">
+                      <img src="assets/effect/자료/3dicons-png-dynamic-1.0.0/trophy-dynamic-gradient.png" class="img-fluid" alt="">
                     </div>                 
                   </div>
                 </div>
               </div>
     
               <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-                <div class="member">
+                <div class="member" >
                   <div class="member">
-                    <div class="member-img">
+                    <div class="member-img" style=" width:120px">
                       <img src="assets/effect/자료/3dicons-png-dynamic-1.0.0/target-dynamic-color.png" class="img-fluid" alt="">
                     </div>                 
                   </div>
@@ -397,7 +494,7 @@
             </div>
 
             
-            <div class="col-lg-6">
+            <!-- <div class="col-lg-6" style="margin-top: 80px;">
               <div class="progress">
                 <span class="skill">진행률<i class="val">100%</i></span>
                 <div class="progress-bar-wrap">
@@ -424,60 +521,38 @@
                 </div>
               </div>
 
-              <!-- <div class="progress">
-                <span class="skill">JavaScript <i class="val">75%</i></span>
-                <div class="progress-bar-wrap">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="75"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
+         
+            </div> -->
+
+              <!-- <div class="col-lg-6"  style="margin-top: 80px;">
+                <div class="progress">
+                  <span class="skill">마케팅 노출 비율 <i class="val">80%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="80"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
                 </div>
+
+                <div class="progress">
+                  <span class="skill">만족도 <i class="val">96%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="96"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+
+            
               </div> -->
-            </div>
-
-            <div class="col-lg-6">
-              <div class="progress">
-                <span class="skill">마케팅 노출 비율 <i class="val">80%</i></span>
-                <div class="progress-bar-wrap">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="80"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">만족도 <i class="val">96%</i></span>
-                <div class="progress-bar-wrap">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="96"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
-
-              <!-- <div class="progress">
-                <span class="skill">Photoshop <i class="val">55%</i></span>
-                <div class="progress-bar-wrap">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="55"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div> -->
-            </div>
           </div>
         </div>
       </section>
@@ -748,69 +823,7 @@
       <!-- End Testimonials Section -->
 
       <section id="clients" class="clients section-bg">
-        <div class="container" data-aos="zoom-in">
-          <div class="row">
-            <div
-              class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
-            >
-              <img
-                src="assets/img/clients/client-1.png"
-                class="img-fluid"
-                alt=""
-              />
-            </div>
-
-            <div
-              class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
-            >
-              <img
-                src="assets/img/clients/client-2.png"
-                class="img-fluid"
-                alt=""
-              />
-            </div>
-
-            <div
-              class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
-            >
-              <img
-                src="assets/img/clients/client-3.png"
-                class="img-fluid"
-                alt=""
-              />
-            </div>
-
-            <div
-              class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
-            >
-              <img
-                src="assets/img/clients/client-4.png"
-                class="img-fluid"
-                alt=""
-              />
-            </div>
-
-            <div
-              class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
-            >
-              <img
-                src="assets/img/clients/client-5.png"
-                class="img-fluid"
-                alt=""
-              />
-            </div>
-
-            <div
-              class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
-            >
-              <img
-                src="assets/img/clients/client-6.png"
-                class="img-fluid"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
+       
       </section>
 
       <!-- ======= Portfolio Section ======= -->
@@ -818,12 +831,76 @@
         <div class="container" data-aos="fade-up">
           <div class="section-title">
             <!-- <h2></h2> -->
-           <h3>D WONDER 마케팅 포트폴리오</h3>
+           <h3>Portfolio</h3>
             <!-- <p>
               Ut possimus qui ut temporibus culpa velit eveniet modi omnis est
               adipisci expedita at voluptas atque vitae autem.
             </p>  -->
           </div>
+
+          <!-- <div class="container" data-aos="zoom-in">
+            <div class="row">
+              <div
+                class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
+              >
+                <img
+                  src="assets/img/clients/client-1.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+  
+              <div
+                class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
+              >
+                <img
+                  src="assets/img/clients/client-2.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+  
+              <div
+                class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
+              >
+                <img
+                  src="assets/img/clients/client-3.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+  
+              <div
+                class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
+              >
+                <img
+                  src="assets/img/clients/client-4.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+  
+              <div
+                class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
+              >
+                <img
+                  src="assets/img/clients/client-5.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+  
+              <div
+                class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
+              >
+                <img
+                  src="assets/img/clients/client-6.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div> -->
 
           <div class="row" data-aos="fade-up" data-aos-delay="100">
             <div class="col-lg-12 d-flex justify-content-center">
@@ -1441,7 +1518,7 @@
     <!-- End #main -->
 
     <!-- ======= Footer ======= -->
-    <footer id="footer">
+    <footer id="footer" style="background-color: #111;">
       <div class="footer-newsletter">
         <div class="container">
           <div class="row justify-content-center">
@@ -1474,7 +1551,7 @@
                 부천시 중동로 254번길 90 <br />
                 1002호<br />
                 
-                <strong>연락처:</strong> +010-4090-4528<br />
+                <strong>연락처:</strong> 010-4090-4528<br />
                 <strong>이메일:</strong> nywoo0225@gmail.com<br />
               </p>
             </div>
@@ -1550,10 +1627,13 @@
         </div>
       </div>
 
-      <div class="container py-4">
+      <div class="container py-4" >
         <div class="copyright">
-          &copy; Copyright <strong><span>D.WONDER</span></strong
-          >. All Rights Reserved
+          &copy; Copyright <span>D.WONDER</span>. All Rights Reserved and 
+          <a 
+          href="https://www.freepik.com/free-photo/checklist-clipboard-pencil-icon-sign-symbol-reminder-checkbox-document-report-concept-pink-background-3d-rendering_25515816.htm#query=3d%20icon&position=9&from_view=keyword">
+          Image by mamewmy
+        </a> on Freepik
         </div>
         <div class="credits">
           <!-- All the links in the footer should remain intact. -->
