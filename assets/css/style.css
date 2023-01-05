@@ -24,13 +24,53 @@
   left: 0;
   right: 0; */
 }
-body {
-  /* font-family: "Open Sans", sans-serif; */
-  font-family: "Nanum Gothic", sans-serif;
-  font-family: "Noto Sans KR", sans-serif;
-  color: #444444;
+
+@font-face {
+  font-family: "LINESeedKR-Rg";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Rg.woff2")
+    format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "LINESeedKR-Bd";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2")
+    format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "LINESeedKR-Th";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Th.woff2")
+    format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GangwonEduPowerExtraBoldA";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
+@font-face {
+  font-family: "NanumSquareNeo-Variable";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  /* font-family: "Gothic A1", sans-serif; */
+  font-family: "LINESeedKR-Rg";
+  color: #444444;
+  font-weight: 100;
+}
+.Bd {
+  font-family: "LINESeedKR-Bd";
+}
 a {
   color: #293120;
   text-decoration: none;
@@ -237,9 +277,6 @@ h6 {
   padding: 0;
   line-height: 1;
   font-weight: 600;
-  letter-spacing: 0.8px;
-  font-family: "Poppins", sans-serif;
-  font-family: "Noto Serif KR", serif;
 }
 
 #header .logo a {
@@ -292,8 +329,8 @@ h6 {
   justify-content: space-between;
   padding: 0 3px;
   font-size: 15px;
-  font-weight: 600;
-  color: #222222;
+  font-weight: 200;
+  color: #293120;
   white-space: nowrap;
   transition: 0.3s;
   position: relative;
@@ -548,10 +585,8 @@ h6 {
 #hero h1 {
   margin: 0;
   font-size: 48px;
-  font-weight: 700;
   line-height: 56px;
   /* color: #222222; */
-  font-family: "Poppins", sans-serif;
 }
 #hero video {
   position: absolute;
@@ -569,7 +604,6 @@ h6 {
   /* color: #555555; */
   margin: 5px 0 30px 0;
   font-size: 24px;
-  font-weight: 400;
 }
 
 #hero .btn-get-started {
@@ -577,7 +611,6 @@ h6 {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 14px;
-  letter-spacing: 1px;
   display: inline-block;
   padding: 10px 28px;
   border-radius: 4px;
@@ -658,41 +691,33 @@ section {
   overflow: hidden;
 }
 
-.section-bg {
-  background-color: #f6f9fe;
-}
-
 .section-title {
   text-align: center;
   padding-bottom: 30px;
 }
 
 .section-title h2 {
-  font-size: 13px;
-  letter-spacing: 1px;
-  font-weight: 700;
+  font-size: 14px;
   padding: 8px 20px;
   margin: 0;
-  background: #e7f1fd;
-  color: #293120;
+  /* background: #293120; */
+  color: #288700;
   display: inline-block;
   text-transform: uppercase;
   border-radius: 50px;
+  margin-bottom: 20px;
+  margin-bottom: 10px;
+  font-weight: 800;
+  font-family: "LINESeedKR-Bd";
+  letter-spacing: 1px;
 }
 
 .section-title h3 {
-  margin: 15px 0 0 0;
-  font-size: 32px;
-  font-weight: 700;
 }
-
-/* .section-title h3 span {
-  color: #293120;
-} */
 
 .section-title p {
   margin: 15px auto 0 auto;
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 
 @media (min-width: 1024px) {
@@ -943,7 +968,7 @@ section {
 .counts .count-box span {
   font-size: 36px;
   display: block;
-  font-weight: 600;
+  /* font-weight: 600; */
   color: #062b5b;
 }
 
@@ -962,22 +987,27 @@ section {
 .clients {
   padding: 15px 0;
   text-align: center;
+  /* background-color: #212121; */
 }
 
 .clients img {
-  max-width: 45%;
+  max-width: 78%;
   transition: all 0.4s ease-in-out;
   display: inline-block;
   padding: 15px 0;
 }
 
+.clients .smImg {
+  max-width: 55%;
+}
+
 .clients img:hover {
-  transform: scale(1.15);
+  transform: scale(1.25);
 }
 
 @media (max-width: 768px) {
   .clients img {
-    max-width: 40%;
+    max-width: 80%;
   }
 }
 
@@ -1013,7 +1043,7 @@ section {
 }
 
 .services .icon-box h4 {
-  font-weight: 700;
+  /* font-weight: 700; */
   margin-bottom: 15px;
   font-size: 24px;
 }
@@ -1048,7 +1078,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials {
   padding: 80px 0;
-  background: url("../img/testimonials-bg.jpg") no-repeat;
+  background: url("../effect/자료/store.jpeg") no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -1079,8 +1109,8 @@ section {
 }
 
 .testimonials .testimonial-item .testimonial-img {
-  width: 100px;
-  border-radius: 50%;
+  height: 400px;
+  border-radius: 25px;
   border: 6px solid rgba(255, 255, 255, 0.15);
   margin: 0 auto;
 }
@@ -1136,7 +1166,7 @@ section {
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #293120;
+  background-color: #c39830;
 }
 
 @media (min-width: 992px) {
@@ -1327,22 +1357,26 @@ section {
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
-.team {
-  padding: 60px 0;
-}
 
-.team .member {
-  margin-bottom: 20px;
-  overflow: hidden;
-  border-radius: 4px;
-  background: #fff;
-  box-shadow: 0px 2px 15px rgba(16, 110, 234, 0.15);
+.member {
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 20px;
+  box-shadow: 0px 2px 15px rgba(151, 151, 151, 0.15);
 }
-
 .member-img {
-  width: 100px;
-  position: relative;
-  overflow: hidden;
+  width: 140px;
+}
+
+.icons .member {
+  margin: 0 14px;
+}
+.member-img div {
+  font-size: 15px;
+  /* font-weight: 200; */
+  color: #444;
+  margin-top: 12px;
+  font-family: "GangwonEduPowerExtraBoldA";
 }
 
 .team .member .social {
@@ -1532,7 +1566,7 @@ section {
 }
 
 .faq .faq-list li {
-  border-bottom: 1px solid #d4e5fc;
+  border-bottom: 1px solid #51534f;
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
@@ -1596,10 +1630,10 @@ section {
 
 .contact .info-box i {
   font-size: 32px;
-  color: #293120;
+  color: #288700;
   border-radius: 50%;
   padding: 8px;
-  border: 2px dotted #b3d1fa;
+  /* border: 2px dotted #b3d1fa; */
 }
 
 .contact .info-box h3 {
@@ -1688,7 +1722,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #293120;
+  background: #2c4d1c;
   border: 0;
   padding: 10px 30px;
   color: #fff;
@@ -1697,7 +1731,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #c39931;
+  background: #256225;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1726,14 +1760,17 @@ section {
 #footer {
   background: #fff;
   padding: 0 0 30px 0;
-  color: #444444;
+  color: #eee;
   font-size: 14px;
   background: #fff6e9;
 }
 
 #footer .footer-newsletter {
   padding: 50px 0;
-  background: #fff6e9;
+  /* background: #c39830; */
+  background-image: url("../effect/자료/gold fractal.png");
+  background-size: cover;
+  background-position: 100% 45%;
   text-align: center;
   font-size: 15px;
 }
@@ -1771,7 +1808,7 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #293120;
+  background: #2c4d1c;
   color: #fff;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
@@ -1779,7 +1816,7 @@ section {
 }
 
 #footer .footer-newsletter form input[type="submit"]:hover {
-  background: #0d58ba;
+  background: #c39830;
 }
 
 #footer .footer-top {
@@ -1807,16 +1844,14 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Roboto", sans-serif;
-  font-family: "Noto Serif KR", serif;
 
-  color: #777777;
+  color: #aaa;
 }
 
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #444444;
+  color: #aaa;
   position: relative;
   padding-bottom: 12px;
 }
@@ -1884,6 +1919,7 @@ section {
 #footer .copyright {
   text-align: center;
   float: left;
+  color: #333;
 }
 
 #footer .credits {
@@ -1900,4 +1936,288 @@ section {
     text-align: center;
     padding: 2px 0;
   }
+}
+
+:root {
+  --clr-primary-400: 263 55% 52%;
+  --clr-secondary-400: 217 19% 35%;
+  --clr-secondary-500: 219 29% 14%;
+  --clr-neutral-100: 0 0% 100%;
+  --clr-neutral-200: 210 46% 95%;
+  --clr-neutral-300: 0 0% 81%;
+
+  --ff-primary: "Barlow Semi Condensed", sans-serif;
+
+  --fw-400: 500;
+  --fw-700: 600;
+
+  --fs-300: 0.6875rem;
+  --fs-400: 0.8125rem;
+  --fs-500: 1.25rem;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+h1,
+h2,
+h3 {
+  /* font-weight: var(--fw-700); */
+}
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.flow > *:where(:not(:first-child)) {
+  margin-top: var(--flow-spacer, 1em);
+}
+
+.bg-primary-400 {
+  background: hsl(var(--clr-primary-400));
+}
+.bg-secondary-400 {
+  background: hsl(var(--clr-secondary-400));
+}
+.bg-secondary-500 {
+  background: hsl(var(--clr-secondary-500));
+}
+
+.bg-neutral-100 {
+  background: hsl(var(--clr-neutral-100));
+}
+
+.text-neutral-100 {
+  color: hsl(var(--clr-neutral-100));
+}
+.text-secondary-400 {
+  color: hsl(var(--clr-secondary-400));
+}
+.border-primary-400 {
+  border: 2px solid #a775f1;
+}
+
+/* components */
+
+/*COMPLEX LAYOUT  - USING GRID TEMPLATE AREAS*/
+.testimonial-grid {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.testimonial:nth-child(1) {
+  grid-area: one;
+}
+.testimonial:nth-child(2) {
+  grid-area: two;
+}
+.testimonial:nth-child(3) {
+  grid-area: three;
+}
+.testimonial:nth-child(4) {
+  grid-area: four;
+}
+.testimonial:nth-child(5) {
+  grid-area: five;
+}
+.testimonial:nth-child(6) {
+  grid-area: six;
+}
+
+@media (min-width: 30em) {
+  .testimonial-grid {
+    grid-template-areas:
+      "one one"
+      "two two"
+      "three three"
+      "four four"
+      "five five"
+      "six six";
+  }
+
+  @media (min-width: 50em) {
+    .testimonial-grid {
+      grid-template-areas:
+        "one two three"
+        "four five six";
+    }
+  }
+  /*FIRST APPROACH - SIMPLE WAY */
+  /*@media (min-width: 50em){
+  .testimonial-grid {
+      grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .testimonial:last-child{
+  grid-column-start: 4;
+  grid-row-start:1;
+  grid-row-end: span 2;
+  }
+  
+  .grid-col-span-2 {
+  grid-column: span 2;
+  }
+
+  grid-row-span-2 {
+    grid-row: span 2;
+  }
+}
+*/
+
+  .testimonial {
+    font-size: var(--fs-400);
+    padding: 4rem 2.5rem 2.5rem 2.5rem;
+    border-radius: 25px;
+    box-shadow: 0px 2px 15px hsl(var(--clr-secondary-400) / 0.25);
+    /* box-shadow: 0px 2px 15px rgb(0, 0, 0, 0.2); */
+  }
+
+  .testimonial {
+    padding-top: 80px;
+  }
+
+  .testimonial p {
+    padding-top: 20px;
+  }
+
+  .testimonial.quote.bg1 {
+    background-image: url("../effect/자료/네이버블로그.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+  }
+
+  .testimonial.bg2 {
+    background-image: url("../effect/자료/인스타그램.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+  }
+
+  .testimonial.bg3 {
+    background-image: url("../effect/자료/플레이스.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+  }
+
+  .testimonial.bg4 {
+    background-image: url("../effect/자료/카페.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+  }
+
+  .testimonial.bg5 {
+    background-image: url("../effect/자료/언론보도.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+  }
+
+  .testimonial.bg6 {
+    background-image: url("../effect/자료/네이버검색.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right 50%;
+  }
+
+  .testimonial img {
+    width: 1.75rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+  }
+
+  .testimonial .name {
+    font-size: var(--fs-400);
+    font-weight: var(--fw-400);
+    line-height: 1;
+  }
+
+  .testimonial .position {
+    font-size: var(--fs-300);
+    opacity: 0.5;
+  }
+
+  .testimonial > p:first-of-type {
+    font-size: var(--fs-500);
+    line-height: 1.2;
+  }
+
+  .testimonial > p:last-of-type {
+    opacity: 0.7;
+  }
+}
+
+.test {
+  font-weight: 200;
+  font-size: 22px;
+  /* letter-spacing: -0.5px; */
 }
