@@ -67,6 +67,7 @@ body {
   font-family: "LINESeedKR-Rg";
   color: #444444;
   font-weight: 100;
+  overflow-x: hidden;
 }
 .Bd {
   font-family: "LINESeedKR-Bd";
@@ -265,10 +266,12 @@ h6 {
   z-index: 997;
   height: 86px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  opacity: 0;
 }
 
 #header.fixed-top {
   height: 70px;
+  opacity: 1;
 }
 
 #header .logo {
@@ -482,10 +485,10 @@ h6 {
   position: absolute;
   top: 55px;
   right: 15px;
-  bottom: 15px;
+  /* bottom: 15px; */
   left: 15px;
   padding: 10px 0;
-  background-color: #fff;
+  background-color: #293120;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -701,7 +704,7 @@ section {
   padding: 8px 20px;
   margin: 0;
   /* background: #293120; */
-  color: #288700;
+  color: #314718;
   display: inline-block;
   text-transform: uppercase;
   border-radius: 50px;
@@ -1113,6 +1116,7 @@ section {
   border-radius: 25px;
   border: 6px solid rgba(255, 255, 255, 0.15);
   margin: 0 auto;
+  aspect-ratio: auto 1 / 1;
 }
 
 .testimonials .testimonial-item h3 {
@@ -1359,20 +1363,23 @@ section {
 --------------------------------------------------------------*/
 
 .member {
+  width: 18vw;
+  display: flex;
+  justify-content: center;
   background-color: #fff;
   border-radius: 25px;
   padding: 20px;
   box-shadow: 0px 2px 15px rgba(151, 151, 151, 0.15);
 }
 .member-img {
-  width: 140px;
+  width: 10vw;
 }
 
 .icons .member {
   margin: 0 14px;
 }
 .member-img div {
-  font-size: 15px;
+  font-size: 22px;
   /* font-weight: 200; */
   color: #444;
   margin-top: 12px;
@@ -1630,7 +1637,7 @@ section {
 
 .contact .info-box i {
   font-size: 32px;
-  color: #288700;
+  color: #314718;
   border-radius: 50%;
   padding: 8px;
   /* border: 2px dotted #b3d1fa; */
@@ -1892,7 +1899,7 @@ section {
 
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
-  color: #293120;
+  color: #fff;
 }
 
 #footer .footer-top .social-links a {
@@ -1935,6 +1942,41 @@ section {
     float: none;
     text-align: center;
     padding: 2px 0;
+  }
+
+  .testimonials .testimonial-item .testimonial-img {
+    height: 300px;
+  }
+}
+@media (min-width: 1199px) {
+  .member {
+    width: 16vw;
+  }
+}
+@media (min-width: 1645px) {
+  .member {
+    width: 15vw;
+  }
+}
+@media (min-width: 1974px) {
+  .member {
+    width: 14vw;
+  }
+}
+
+@media (max-width: 992px) {
+  .member {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 576px) {
+  .testimonials .testimonial-item .testimonial-img {
+    height: 200px;
+  }
+  .testimonial-grid {
+    margin: 0 30px;
   }
 }
 
@@ -2091,6 +2133,102 @@ h3 {
   grid-area: six;
 }
 
+@media (max-width: 480px) {
+  .testimonial-grid {
+    grid-template-areas:
+      "one one"
+      "two two"
+      "three three"
+      "four four"
+      "five five"
+      "six six";
+  }
+
+  .testimonial {
+    font-size: var(--fs-400);
+    padding: 4rem 2.5rem 2.5rem 2.5rem;
+    border-radius: 25px;
+    box-shadow: 0px 2px 15px hsl(var(--clr-secondary-400) / 0.25);
+    /* box-shadow: 0px 2px 15px rgb(0, 0, 0, 0.2); */
+  }
+
+  .testimonial {
+    padding-top: 80px;
+  }
+
+  .testimonial p {
+    padding-top: 20px;
+  }
+
+  .testimonial.quote.bg1 {
+    background-image: url("../effect/자료/네이버블로그.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+  }
+
+  .testimonial.bg2 {
+    background-image: url("../effect/자료/인스타그램.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+  }
+
+  .testimonial.bg3 {
+    background-image: url("../effect/자료/플레이스.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+  }
+
+  .testimonial.bg4 {
+    background-image: url("../effect/자료/카페.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+  }
+
+  .testimonial.bg5 {
+    background-image: url("../effect/자료/언론보도.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+  }
+
+  .testimonial.bg6 {
+    background-image: url("../effect/자료/네이버검색.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right 50%;
+  }
+
+  .testimonial img {
+    width: 1.75rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+  }
+
+  .testimonial .name {
+    font-size: var(--fs-400);
+    font-weight: var(--fw-400);
+    line-height: 1;
+  }
+
+  .testimonial .position {
+    font-size: var(--fs-300);
+    opacity: 0.5;
+  }
+
+  .testimonial > p:first-of-type {
+    font-size: var(--fs-500);
+    line-height: 1.2;
+  }
+
+  .testimonial > p:last-of-type {
+    opacity: 0.7;
+  }
+}
+
 @media (min-width: 30em) {
   .testimonial-grid {
     grid-template-areas:
@@ -2102,7 +2240,7 @@ h3 {
       "six six";
   }
 
-  @media (min-width: 50em) {
+  @media (min-width: 60em) {
     .testimonial-grid {
       grid-template-areas:
         "one two three"
@@ -2220,4 +2358,133 @@ h3 {
   font-weight: 200;
   font-size: 22px;
   /* letter-spacing: -0.5px; */
+}
+
+.greenBack {
+  height: 100vh;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("../img/greenback.png");
+  will-change: transform;
+  transform: perspective(600px);
+  z-index: 100;
+}
+.greenBackMini {
+  border: 1px solid red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url(./greenback.png);
+  will-change: transform;
+  transform: perspective(600px);
+  z-index: 100;
+}
+.companyStrengths {
+  font-family: "Montserrat", "Noto Sans KR", sans-serif;
+  position: relative;
+  top: 30vh;
+  font-weight: 300;
+  font-size: 2rem;
+  letter-spacing: -1px;
+  text-align: center;
+  color: #fff;
+}
+.companyStrengths img {
+  margin: auto;
+  margin-bottom: 50px;
+  width: 42vw;
+  display: block;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+
+.animation2s {
+  animation: fadeInUp 2s;
+}
+.field {
+  margin-top: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mouse {
+  width: 20px;
+  height: 42px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 60px;
+  position: relative;
+}
+.mouse::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: wheel 2s infinite;
+  -webkit-animation: wheel 2s infinite;
+}
+
+@keyframes wheel {
+  to {
+    opacity: 0;
+    top: 30px;
+  }
+}
+@-webkit-keyframes wheel {
+  to {
+    opacity: 0;
+    top: 30px;
+  }
+}
+
+.fontWeight500 {
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  .member {
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+  }
+  .member-img {
+    width: 30vw;
+    text-align: center;
+  }
+  .member-img div {
+    font-size: 20px;
+  }
+}
+@media (max-width: 439px) {
+  .member {
+    width: 80vw;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0px 2px 15px rgb(151 151 151 / 15%);
+    display: flex;
+    justify-content: center;
+  }
+  .member-img {
+    width: 60vw;
+    text-align: center;
+  }
 }
