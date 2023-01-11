@@ -1,0 +1,61 @@
+.card {
+  width: 120%;
+  height: 100%;
+  background-color: transparent;
+  transition: transform 1.25s cubic-bezier(0.215, 0.61, 0.355, 1),
+    box-shadow 1.25s cubic-bezier(0.215, 0.61, 0.355, 1),
+    box-shadow 1.25s cubic-bezier(0.215, 0.61, 0.355, 1),
+    filter 1.25s cubic-bezier(0.215, 0.61, 0.355, 1),
+    opacity 1.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transform: perspective(1600px) translate3d(0, 0, 0) scale(0.5);
+  will-change: transform;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 400;
+  left: -10%;
+}
+.card:hover {
+  box-shadow: 0 0 75px rgba(0, 0, 0, 0.2), 0 5px 20px rgba(0, 0, 0, 0.2);
+  mix-blend-mode: hard-light;
+  filter: grayscale(100%);
+  opacity: 0.8;
+}
+.card-title-wrap {
+  transform: perspective(1600px) translate3d(0, 0, 100px);
+  position: relative;
+  z-index: 200;
+  transition: transform 0.25s linear;
+}
+
+.copy-wrap img {
+  width: 80vw;
+  margin-bottom: 20px;
+}
+.card-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("../img/greenback.png");
+
+  /* background-color: #293120; */
+  will-change: transform;
+  transform: perspective(600px);
+  z-index: 100;
+}
+
+.text-img {
+  position: absolute;
+  top: 4rem;
+  margin-left: 44vw;
+}
+.text-img img {
+  width: 12vw;
+}

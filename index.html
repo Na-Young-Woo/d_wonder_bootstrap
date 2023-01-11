@@ -14,36 +14,82 @@
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
     <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/animation.css" rel="stylesheet" />
+    <link href="assets/css/hamburger.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Montserrat:wght@900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
-  </head>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+
+</head>
   <body>
     
 
-    <div style="width: 100vw; height:100vh;;">
-      
-      <div style="position: relative; text-align: center;">
-      
-        <img style="width: 12vw" src="./assets/img/생각을_뒤집다.png" alt="">
-      <a href="#companyIntro">
-        <img class="greenBackmini" style="width: 60vw;position:absolute;" src="./assets/img/greenback.png" alt="">
-      </a>
-        <img  style="width: 20vw;;position:absolute;" src="./assets/img/dwonder_gold_material5.png" alt="">
+    <div style="width: 100vw; height:100vh;">
+
+      <div class="hamburger-wrap">
+        <div class="row cf">
+          <div class="three col">
+            <div class="hamburger" id="hamburger-1">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <a href="#contact"> 
+      <button class="marketingBtn">
+        빠른 마케팅 문의
+      </button>
+    </a>
+
+      <a href="#companyIntro">
+        <div class="text-img" data-aos="flip-up" data-aos-delay="10" >
+          <img src="./assets/img/생각을_뒤집다.png" alt="">
+        </div>
+
+        <div class="card" style="z-index: -10">
+          <div class="card-title-wrap">
+            <h1 class="title">
+              <span class="copy-wrap" style="letter-spacing: 0.05rem">
+                <img src="./assets/img/dwonder_gold_material5.png" alt="" />
+              </span>
+            </h1>
+          </div>
+          <div class="card-img"></div>
+        </div>
+
+      </a>
+      
+      
     </div>
+
+
+    <!-- <div style="position: relative; text-align: center;">
+      
+      <img style="width: 12vw" src="./assets/img/생각을_뒤집다.png" alt="">
+    <a href="#companyIntro">
+      <img class="greenBackmini" style="width: 60vw;position:absolute;" src="./assets/img/greenback.png" alt="">
+    </a>
+      <img  style="width: 20vw;;position:absolute;" src="./assets/img/dwonder_gold_material5.png" alt="">
+    </div> -->
     
    
-    <div class="greenBack" id="companyIntro">
-      <div class="container">
-        <p class="companyStrengths animation2s">
+    <div class="greenBack" id="companyIntro" 
+      <div class="container"  >
+        <p class="companyStrengths" data-aos="fade-up" data-aos-delay="100">
           <img src="./assets/img/dwonder_gold_material5.png" alt="">
 
           <span>
@@ -53,8 +99,8 @@
           <span class="fontWeight500" style="color: #dca41f">알차게.</span>
           </span>
 
-          <div class="field">
-            <div class="displayNone mouse animation2s"></div>
+          <div class="field" data-aos="fade-up" data-aos-delay="100">
+            <div class="displayNone mouse"></div>
           </div>
         </p>
         <div>
@@ -76,7 +122,7 @@
             <li><a class="nav-link scrollto " style="color:#fff" href="#portfolio">포트폴리오</a></li>
             <li><a class="nav-link scrollto" style="color:#fff" href="#QnA">QnA</a></li>
             <li>
-              <button class="btn-get-started btn" style="font-weight: 600;background: linear-gradient(to bottom,  #ffd87e, #f7bc33);">
+              <button class="btn-get-started btn" style="font-weight: 600;background: linear-gradient(to bottom,  #f8b61e, #d8a01d);">
                 <a class="nav-link scrollto" href="#contact" ><span class="Bd">빠른 마케팅 문의</span></a>
               </button>
             </li>
@@ -86,9 +132,9 @@
       </div>
     </header>
 
-    <section class="services" style="background-color: #fff;">
+    <section  id="dwonderIntroduction" class="services" style="background-color: #fff;">
       <div class="container" data-aos="fade-up">
-        <div class="section-title" id="dwonderIntroduction">
+        <div class="section-title">
           <h2>Introduction</h2>
           <!-- <h3>Check our <span>Services</span></h3> -->
           <h3><span class="Bd" style="color: #c39830;">d.wonder </span><span style="font-weight: 300;">에서는 어떤 걸 진행할 수
