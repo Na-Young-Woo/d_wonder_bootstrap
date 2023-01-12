@@ -52,10 +52,15 @@
 }
 
 .text-img {
+  width: 200px;
   position: absolute;
   top: 4rem;
-  margin-left: 44vw;
+
+  left: 50%;
+  transform: translate(-50%, 0%);
+
+  /* margin-left: 44vw; */
 }
 .text-img img {
-  width: 12vw;
+  width: 100%;
 }
